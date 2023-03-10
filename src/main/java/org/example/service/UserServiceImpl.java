@@ -7,7 +7,7 @@ import org.example.model.User;
 
 public class UserServiceImpl implements UserService{
 
-    private final UserDao userDao = new UserDaoImpl();
+    private UserDao userDao = new UserDaoImpl();
 
     @Override
     public boolean checkUserExist(User user) {

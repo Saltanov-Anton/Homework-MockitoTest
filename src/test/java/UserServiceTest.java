@@ -33,7 +33,7 @@ public class UserServiceTest {
     @Test
     public void shouldReturnFalse() {
         User user = new User("Misha");
-        when(userDaoMock.getUserByName(user.getName())).thenReturn(user);
+        when(userDaoMock.getUserByName(user.getName())).thenReturn(null);
 
         assertFalse(out.checkUserExist(user));
     }
